@@ -10,9 +10,7 @@
     font-size: 62.5%;
 }
 
-/* web design css */
 
-/* navbar css */
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines{
     display: none;
@@ -179,47 +177,55 @@
     }
 
 }
-
-@media (max-width: 500px){
-    .navbar-container input[type="checkbox"]:checked ~ .logo{
-        display: none;
-    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
 }
 
-/* body container css */
-.body-container{
-  border: 2px solid black;
-  padding: 20px;
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 
-.myprofile-container{
-  border: 2px solid green;
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  gap: 10px;
-  /* justify-content: space-between; */
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.description-container{
-  border:2px solid magenta;
-  height: 400px;
-  width: 65%;
-  padding: 10px;
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
-.description-box{
-    color: black;
-    font-family: "Liter", serif;
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.profile-img-container{
-  border: 2px solid yellow;
-  height: 400px;
-  width: 35%;
-  padding: 10px;
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
-#portfoliopic{
-    width: 25vw;
-    height:50vh;
+
+.project-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+

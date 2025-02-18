@@ -76,9 +76,7 @@ function payBill(callback){
 }
 
 // Chaining the Callbacks
-
-reachedRestaurantReachedRestaurant(()=>{
-    reachedRestaurant(()=>{
+reachedRestaurant(()=>{
         TableFinding(()=>{
             MenuDiscover(()=>{
                 starterOrder(()=>{
@@ -94,4 +92,3 @@ reachedRestaurantReachedRestaurant(()=>{
                 })
             })
         })
-    })
